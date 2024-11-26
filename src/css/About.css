@@ -263,6 +263,8 @@ h2 {
 }
 #about-page-container #about-layout #content-tabs-container #content-tabs #about-profile .socialMedia-container .socialMedia-icons {
   cursor: pointer;
+  height: 50px;
+  fill: #0A66C2;
 }
 #about-page-container #about-layout #content-tabs-container #content-tabs #about-skills {
   width: 100%;

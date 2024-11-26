@@ -49,12 +49,12 @@ const Portfolio = () => {
           </div>
         </div>
         <div className='observer-start-image'>
-          <img src='/familyFeud.jpg'></img>
+          <img src='/portfolio-v3.0/familyFeud.jpg'></img>
         </div>
       </div>
       <div className='project-container'>
         <div className='observer-start-image'>
-          <img src='/collection.jpg'></img>
+          <img src='/portfolio-v3.0/collection.jpg'></img>
         </div>
         <div className='project-text-container observer-start-text'>
           <h3>&quot;I have too many Friend Photos&quot; - Some Popular Friend</h3>
@@ -89,12 +89,12 @@ const Portfolio = () => {
           </div>
         </div>
         <div className='observer-start-image'>
-          <img src='/movementMemoryTest.jpg'></img>
+          <img src='/portfolio-v3.0/movementMemoryTest.jpg'></img>
         </div>
       </div>
       <div className='project-container'>
         <div className='observer-start-image'>
-          <img src='/numberFacts.jpg'></img>
+          <img src='/portfolio-v3.0/numberFacts.jpg'></img>
         </div>
         <div className='project-text-container observer-start-text'>
           <h3>What Does this Number Mean in English?</h3>
@@ -128,7 +128,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className='observer-start-image'>
-          <img src='/split-bill-calculator.png'></img>
+          <img src='/portfolio-v3.0/split-bill-calculator.png'></img>
         </div>
       </div>
     </div>
