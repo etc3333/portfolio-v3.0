@@ -61,7 +61,7 @@ const Contact = () => {
             <div>Email</div>
             <div>ethan.chen333@gmail.com</div>
             <div>Number</div>
-            <div>(818) 215-6099</div>
+            <div>(818) 251-6099</div>
             <div>Linkedin</div>
             <div>www.linkedin.com/in/ethan-chen-88649b229</div>
           </div>

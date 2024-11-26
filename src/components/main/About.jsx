@@ -123,23 +123,24 @@ const About = () => {
                         <div className='about-profile-jobTitle'>Frontend Software Engineering Intern | NeuroLeap Corp</div>
                         <div>Jan 2023 - April 2024</div>
                         <ul>
-                          <li>Tech Stack: Vue.js</li>
-                          <li>Enhanced the UI/UX for NeuroLeap Corp&apos;s main site to improve customer engagement and streamline introductions to our services.</li>
-                          <li>Enhanced site accessibility by implementing features to improve usability for users with disabilities and expanding overall audience reach.</li>
-                          <li>Added translation feature to enhance audience for Neuroleap mainsite.</li>
+                          <li>Tech Stack: Vue.js, Golang, PostgreSQL</li>
+                          <li>Implemented UI/UX wireframes to main company website.</li>
+                          <li>Collaborated with developer to integrate translation feature to the site for convenience to out of country users.</li>
+                          <li>Revamped website by optimizing color schemes, typography and spacing to reduce visual strain and increase session duration of new and current users.</li>
                         </ul>
                       </li>
                       <li>
                         <div className='about-profile-jobTitle'>Full Stack Software Engineering | NeuroLeap Corp</div>
                         <div>April 2024 - Present</div>
                         <ul>
-                          <li>Tech Stack: Vue.js, Golang, PostgreSQL, Docker</li>
-                          <li>Developed and maintained a scalable cloud service enabling medical specialists to create custom applications for testing patients.</li>
-                          <li>Implemented report generation features using <a href='https://d3js.org/'>D3.js</a> to create interactive visualize statistical data analysis.</li>
-                          <li>Used <a href='https://www.docker.com/'>Docker</a> to orchestrate multi-container environments, facilitating ease integration of backend services, database, frontend services and reverse proxies.</li>
-                          <li>Configured <a href='https://nginx.org/en/'>Nginx</a> as a reverse proxy to distribute incoming client request to multiople backend services enchancing load balancing and scalability.</li>
-                          <li>Designed RESTful APIs to handle Create, Read, Update, and Delete (CRUD) operations.</li>
-                          <li>Automated email transactions to imrove customer experience and interactivity.</li>
+                          <li>Tech Stack: Vue.js, Golang, PostgreSQL, Docker, Nginx</li>
+                          <li>Spearheaded the development of a scalable web service enabling medical specialists to create custom applications for testing special needs individuals.</li>
+                          <li>Engineered an advanced report generation features via <a href='https://d3js.org/'>D3.js</a> to compare test results, incorporating statistical analysis and data visualization tools/libraries for comprehensive insights.</li>
+                          <li>Delivered web service deployment via <a href='https://www.docker.com/'>Docker</a> Compose files to orchestrate multi-container environments, facilitating seamless integration of backend services, database, and frontend applications.</li>
+                          <li>Configured <a href='https://nginx.org/en/'>Nginx</a> as a reverse proxy to distribute incoming client requests to multiple backend services, enhancing scalability and debugging ease.</li>
+                          <li>Devised RESTful APIs to handle Create, Read, Update, and Delete (CRUD) operations, ensuring robust and scalable interactions with the database.</li>
+                          <li>Streamlined email automation to improve customer experience and interactivity.</li>
+                          <li>Oversaw/Directed implementation of JWT role-based authentication for the middleware.</li>
                         </ul>
                       </li>
                     </ul>
