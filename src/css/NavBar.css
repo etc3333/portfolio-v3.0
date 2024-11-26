@@ -1,0 +1,147 @@
+h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+@keyframes draw-path {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-text {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fade-in-yellow-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fffcba;
+  }
+}
+@keyframes fade-in-black-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #010101;
+  }
+}
+@keyframes fade-in-blue-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #befaff;
+  }
+}
+@keyframes fade-in-yellow-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fffcba;
+  }
+}
+@keyframes fade-in-grey-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #777777;
+  }
+}
+@keyframes fade-in-skin-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #FFCBAD;
+  }
+}
+@keyframes fade-in-green-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #E9F381;
+  }
+}
+@keyframes fade-in-pink-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fdc1f8;
+  }
+}
+nav {
+  position: fixed;
+  height: 80px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 50;
+  color: #010101;
+}
+nav .nav-tabs {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  position: relative;
+  user-select: none;
+}
+nav .nav-tabs > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #777777;
+}
+nav .nav-tabs .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+nav .nav-chipsocket {
+  margin: 0 1rem;
+}
+nav #moving-chip {
+  z-index: 20;
+  position: absolute;
+  transition: top 0.75s, left 0.75s;
+}
+nav .blink {
+  animation: blink-animation 1.5s infinite alternate;
+}
+nav .delay1 {
+  animation-delay: 0;
+}
+nav .delay2 {
+  animation-delay: 0.75s;
+}
+@keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+nav text {
+  stroke: #befaff;
+  stroke-width: 1;
+  fill: transparent;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw-text 2s linear forwards 2s, fade-in-black-1 3s 3.5s ease forwards;
+}
+
+/*# sourceMappingURL=NavBar.css.map */

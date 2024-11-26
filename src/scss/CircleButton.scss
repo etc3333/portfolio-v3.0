@@ -1,0 +1,23 @@
+@use 'sharedStyles.scss' as shared;
+
+.circle-button {
+  cursor: pointer;
+
+  text {
+    fill: transparent;
+    stroke: black;
+    stroke-width: 1;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw-text 2s linear forwards 2s,
+                fade-in-black-1 3s 3.5s ease forwards;
+  }
+
+  path {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    stroke: shared.$blue-1;
+    animation: draw-path 3s ease forwards,
+                fade-in-yellow-1 3s 3.5s ease forwards;
+  }
+}

@@ -1,0 +1,335 @@
+h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+@keyframes draw-path {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-text {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fade-in-yellow-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fffcba;
+  }
+}
+@keyframes fade-in-black-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #010101;
+  }
+}
+@keyframes fade-in-blue-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #befaff;
+  }
+}
+@keyframes fade-in-yellow-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fffcba;
+  }
+}
+@keyframes fade-in-grey-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #777777;
+  }
+}
+@keyframes fade-in-skin-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #FFCBAD;
+  }
+}
+@keyframes fade-in-green-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #E9F381;
+  }
+}
+@keyframes fade-in-pink-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fdc1f8;
+  }
+}
+#about-page-container {
+  width: 100%;
+  font-size: 1.1rem;
+}
+@keyframes popScale {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#about-page-container .title-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#about-page-container .title-container h2 {
+  z-index: 50;
+}
+#about-page-container .title-container > .banner-span {
+  background: linear-gradient(to bottom, #fdc1f8, white);
+  background-color: #fdc1f8;
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 25;
+}
+#about-page-container > div {
+  display: flex;
+  justify-content: start;
+  padding: 1rem;
+}
+#about-page-container .observer-start-element {
+  transform: scale(0);
+}
+#about-page-container .observer-start-element.pop-scale-animation {
+  animation: popScale 1.2s ease forwards;
+}
+#about-page-container #about-layout {
+  position: relative;
+  z-index: 50;
+  width: 100%;
+  padding: 1rem;
+  border: solid 1px grey;
+  border-radius: 1rem;
+  background-color: white;
+}
+#about-page-container #about-layout #about-nav-tabs {
+  user-select: none;
+  margin-bottom: 1rem;
+  position: relative;
+  font-size: 2rem;
+  width: fit-content;
+  border: solid grey 1px;
+  padding: 0.5rem;
+  border-radius: 50rem;
+}
+#about-page-container #about-layout #about-nav-tabs #moving-tab-rectangle {
+  position: absolute;
+  transition: left 1s ease, width 1s ease;
+  background-color: #fdc1f8;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  border-radius: 50rem;
+  height: 100%;
+}
+#about-page-container #about-layout #about-nav-tabs span {
+  position: relative;
+  z-index: 5;
+}
+#about-page-container #about-layout #about-nav-tabs .nav-tab {
+  padding: 0 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  border: solid 1px transparent;
+  color: black;
+}
+#about-page-container #about-layout #about-nav-tabs .nav-tab:hover {
+  border: solid #fdc1f8 1px;
+  border-radius: 50rem;
+}
+#about-page-container #about-layout #about-nav-tabs span:nth-child(1) {
+  margin-left: 0;
+}
+#about-page-container #about-layout #content-tabs-container {
+  border: solid grey 1px;
+  border-radius: 1rem;
+  padding: 5px;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 3rem;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs::-webkit-scrollbar {
+  width: 5px;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 27px;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 27px;
+}
+@supports not selector(::-webkit-scrollbar) {
+  #about-page-container #about-layout #content-tabs-container #content-tabs {
+    scrollbar-color: grey white;
+  }
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile, #about-page-container #about-layout #content-tabs-container #content-tabs #about-skills, #about-page-container #about-layout #content-tabs-container #content-tabs #about-questionnaire {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 700px;
+  transition: transform 1s ease;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile .questionnaire-title-container, #about-page-container #about-layout #content-tabs-container #content-tabs #about-skills .questionnaire-title-container, #about-page-container #about-layout #content-tabs-container #content-tabs #about-questionnaire .questionnaire-title-container {
+  display: flex;
+  align-items: center;
+  color: #ff29ed;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile .questionnaire-title-container svg, #about-page-container #about-layout #content-tabs-container #content-tabs #about-skills .questionnaire-title-container svg, #about-page-container #about-layout #content-tabs-container #content-tabs #about-questionnaire .questionnaire-title-container svg {
+  margin-right: 5px;
+  height: 1rem;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile {
+  margin: 1rem;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile h3, #about-page-container #about-layout #content-tabs-container #content-tabs #about-profile h4, #about-page-container #about-layout #content-tabs-container #content-tabs #about-profile h5, #about-page-container #about-layout #content-tabs-container #content-tabs #about-profile h6 {
+  margin: 0;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile h3 {
+  font-size: 1.8rem;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile h4 {
+  font-size: 1.6rem;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile h5 {
+  font-size: 1.4rem;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile .about-profile-intro-container {
+  display: flex;
+  justify-content: center;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile .about-profile-intro-container .about-profile-intro {
+  padding: 1rem;
+  border: solid #ff29ed 1px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+  text-align: center;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile .about-profile-jobExperience {
+  padding: 1rem;
+  border: solid #ff29ed 1px;
+  border-radius: 1rem;
+  width: fit-content;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile .about-profile-education {
+  padding: 1rem;
+  border: solid #ff29ed 1px;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile .about-profile-jobTitle {
+  font-weight: 700;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile .about-profile-jobTitle + div {
+  font-weight: 700;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-profile .socialMedia-container .socialMedia-icons {
+  cursor: pointer;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-skills {
+  width: 100%;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-skills > div {
+  border: solid grey 1px;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-skills .about-skill-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-skills .about-skill-title-container > span {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  color: #ff29ed;
+  border-radius: 50rem;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-skills .about-skill-content-container ul {
+  list-style: none;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-skills .about-skill-content-container ul li {
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
+  border: solid black 1px;
+  border-radius: 50rem;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-questionnaire {
+  margin: 1rem;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-questionnaire .accordion-container {
+  margin: 5px 0;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-questionnaire .accordion-container .accordion {
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 50rem;
+  background-color: white;
+  border: solid #fdc1f8 1px;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-questionnaire .accordion-container .accordion:hover {
+  background-color: #fdc1f8;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-questionnaire .accordion-container .accordion.active {
+  background-color: #fdc1f8;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-questionnaire .accordion-container .accordion + .panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+#about-page-container #about-layout #content-tabs-container #content-tabs #about-questionnaire .accordion-container .accordion + .panel p {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=About.css.map */

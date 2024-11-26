@@ -1,0 +1,207 @@
+h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+@keyframes draw-path {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-text {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fade-in-yellow-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fffcba;
+  }
+}
+@keyframes fade-in-black-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #010101;
+  }
+}
+@keyframes fade-in-blue-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #befaff;
+  }
+}
+@keyframes fade-in-yellow-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fffcba;
+  }
+}
+@keyframes fade-in-grey-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #777777;
+  }
+}
+@keyframes fade-in-skin-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #FFCBAD;
+  }
+}
+@keyframes fade-in-green-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #E9F381;
+  }
+}
+@keyframes fade-in-pink-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fdc1f8;
+  }
+}
+#contact-page-container {
+  width: 100%;
+}
+@keyframes popScale {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#contact-page-container .observer-start-element {
+  transform: scale(0);
+}
+#contact-page-container .observer-start-element.pop-scale-animation {
+  animation: popScale 1.2s ease forwards;
+}
+#contact-page-container .title-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#contact-page-container .title-container h2 {
+  z-index: 50;
+}
+#contact-page-container .title-container > .banner-span {
+  background: linear-gradient(to bottom, #fffcba, white);
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 25;
+}
+#contact-page-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-page-container #contact-box-container {
+  border: solid grey 1px;
+  padding: 1rem;
+  width: 80%;
+  border-radius: 1rem;
+  background-color: white;
+  z-index: 50;
+  margin-bottom: 3rem;
+}
+#contact-page-container #contact-box-container h4 {
+  text-align: center;
+}
+#contact-page-container #contact-box-container #contact-table {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#contact-page-container #contact-box-container #contact-table div:nth-child(odd) {
+  text-align: center;
+}
+#contact-page-container input[type=text], #contact-page-container input[type=email], #contact-page-container textarea {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  resize: none;
+  width: 100%;
+  border-radius: 1rem;
+}
+#contact-page-container input[type=text]:focus, #contact-page-container input[type=email]:focus, #contact-page-container textarea:focus {
+  outline: solid 1px #fffcba;
+}
+#contact-page-container #form-container {
+  border: solid grey 1px;
+  padding: 1rem;
+  width: 80%;
+  border-radius: 1rem;
+  background-color: white;
+  z-index: 50;
+  margin-bottom: 3rem;
+}
+#contact-page-container #form-container form {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5px;
+  font-weight: 700;
+}
+#contact-page-container #form-container form label {
+  display: block;
+  margin: 0.5rem 0;
+}
+#contact-page-container #form-container form textarea {
+  height: 300px;
+}
+#contact-page-container #form-container #form-left-side-container {
+  display: flex;
+  flex-direction: column;
+}
+#contact-page-container #form-container #form-left-side-container #contact-form-note-container {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: solid #d6cb00 1px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact-page-container #form-container .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#contact-page-container #form-container .button-container button {
+  font-weight: 700;
+  border: solid lightgrey 1px;
+  width: 100%;
+  background-color: white;
+  border-radius: 50rem;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+#contact-page-container #form-container .button-container button:hover {
+  background-color: #fffcba;
+}
+
+/*# sourceMappingURL=Contact.css.map */

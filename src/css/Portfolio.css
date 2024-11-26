@@ -1,0 +1,194 @@
+h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+@keyframes draw-path {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-text {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fade-in-yellow-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fffcba;
+  }
+}
+@keyframes fade-in-black-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #010101;
+  }
+}
+@keyframes fade-in-blue-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #befaff;
+  }
+}
+@keyframes fade-in-yellow-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fffcba;
+  }
+}
+@keyframes fade-in-grey-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #777777;
+  }
+}
+@keyframes fade-in-skin-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #FFCBAD;
+  }
+}
+@keyframes fade-in-green-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #E9F381;
+  }
+}
+@keyframes fade-in-pink-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fdc1f8;
+  }
+}
+#portfolio-page-container {
+  width: 100%;
+}
+@keyframes popScale {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes squirmInfinite {
+  0% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  85% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#portfolio-page-container .title-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#portfolio-page-container .title-container h2 {
+  z-index: 50;
+}
+#portfolio-page-container .title-container > .banner-span {
+  background: linear-gradient(to bottom, #befaff, white);
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 25;
+}
+#portfolio-page-container h3 {
+  color: #00abbb;
+  font-size: 1.6rem;
+  margin: 0;
+}
+#portfolio-page-container .observer-start-image {
+  transform: scale(0);
+}
+#portfolio-page-container .observer-start-image.pop-scale-animation {
+  animation: popScale 1.2s ease forwards;
+}
+#portfolio-page-container .observer-start-text {
+  transform: scale(0);
+}
+#portfolio-page-container .observer-start-text.pop-scale-animation {
+  animation: popScale 1.5s ease forwards;
+}
+#portfolio-page-container .project-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 50;
+  padding: 1rem;
+}
+#portfolio-page-container .project-container div:nth-child(1), #portfolio-page-container .project-container div:nth-child(2) {
+  flex: 1;
+  text-align: center;
+}
+#portfolio-page-container .project-container .project-text-container {
+  background-color: rgb(254, 254, 254);
+  border-radius: 1rem;
+  border: solid black 1px;
+  padding: 1rem;
+}
+#portfolio-page-container .project-container svg {
+  height: 40px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+#portfolio-page-container .project-container img {
+  height: 300px;
+  border-radius: 1rem;
+}
+#portfolio-page-container .project-container img.project-icon {
+  background-color: black;
+  width: 50px;
+  height: auto;
+  padding: 5px;
+  cursor: pointer;
+}
+#portfolio-page-container .project-container button {
+  cursor: pointer;
+  border: solid #befaff 2px;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  border-radius: 50rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=Portfolio.css.map */

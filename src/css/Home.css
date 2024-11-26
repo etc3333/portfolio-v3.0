@@ -1,0 +1,236 @@
+h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+@keyframes draw-path {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-text {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fade-in-yellow-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fffcba;
+  }
+}
+@keyframes fade-in-black-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #010101;
+  }
+}
+@keyframes fade-in-blue-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #befaff;
+  }
+}
+@keyframes fade-in-yellow-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fffcba;
+  }
+}
+@keyframes fade-in-grey-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #777777;
+  }
+}
+@keyframes fade-in-skin-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #FFCBAD;
+  }
+}
+@keyframes fade-in-green-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #E9F381;
+  }
+}
+@keyframes fade-in-pink-1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #fdc1f8;
+  }
+}
+#home-page-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+#home-page-container #intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#home-page-container #intro-container > div {
+  width: 100%;
+}
+@keyframes rotate-infinite {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-out-text {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#home-page-container #intro-container #svg-border-decoration path {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  stroke: #010101;
+  stroke-width: 3;
+  fill: transparent;
+  animation: draw-path 3s ease 7s forwards;
+}
+#home-page-container #intro-container #svg-intro .intro-text {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  stroke: #010101;
+  stroke-width: 1;
+  fill: transparent;
+  animation: draw-text 1s ease 0s forwards, fade-in-black-1 1s ease 1s forwards;
+}
+#home-page-container #intro-container #svg-intro .nav-text {
+  cursor: pointer;
+}
+#home-page-container #intro-container #svg-intro .nav-text:hover {
+  text-decoration: underline;
+}
+#home-page-container #intro-container #svg-intro #nav-pentagon {
+  stroke-dasharray: 1100;
+  stroke-dashoffset: 1100;
+  stroke: #befaff;
+  stroke-width: 1;
+  fill: transparent;
+  animation: draw-path 1s ease 0s forwards, fade-in-blue-1 3s ease 1s forwards;
+}
+#home-page-container #intro-container #svg-intro #nav-pentagon.rotateInfinite {
+  animation: draw-path 1s ease 0s forwards, fade-in-blue-1 3s ease 1s forwards, rotate-infinite 3s linear infinite forwards;
+  transform-origin: center;
+}
+#home-page-container #intro-container #svg-intro #nav-triangle {
+  stroke-dasharray: 1100;
+  stroke-dashoffset: 1100;
+  stroke: #fdc1f8;
+  stroke-width: 1;
+  fill: transparent;
+  animation: draw-path 1s ease 0s forwards, fade-in-pink-1 3s ease 1s forwards;
+}
+#home-page-container #intro-container #svg-intro #nav-triangle.rotateInfinite {
+  animation: draw-path 1s ease 0s forwards, fade-in-pink-1 3s ease 1s forwards, rotate-infinite 3s linear infinite forwards;
+  transform-origin: center;
+}
+#home-page-container #intro-container #svg-intro #nav-square {
+  stroke-dasharray: 1100;
+  stroke-dashoffset: 1100;
+  stroke: #E9F381;
+  stroke-width: 1;
+  fill: transparent;
+  animation: draw-path 1s ease 0s forwards, fade-in-green-1 3s ease 1s forwards;
+}
+#home-page-container #intro-container #svg-intro #nav-square.rotateInfinite {
+  animation: draw-path 1s ease 0s forwards, fade-in-green-1 3s ease 1s forwards, rotate-infinite 3s linear infinite forwards;
+  transform-origin: center;
+}
+#home-page-container #intro-container #svg-human #arcPath1, #home-page-container #intro-container #svg-human #arcPath2, #home-page-container #intro-container #svg-human #arcPath3 {
+  fill: transparent;
+}
+#home-page-container #intro-container #svg-human #arcPath1 {
+  animation: fade-in-blue-1 1s ease 3s forwards, moveAndReverse1 1s linear 7s infinite alternate;
+}
+@keyframes moveAndReverse1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-20px, -20px);
+  }
+}
+#home-page-container #intro-container #svg-human #arcPath2 {
+  animation: fade-in-pink-1 1s ease 4s forwards, moveAndReverse2 1s linear 7s infinite alternate;
+}
+@keyframes moveAndReverse2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -20px);
+  }
+}
+#home-page-container #intro-container #svg-human #arcPath3 {
+  animation: fade-in-green-1 1s ease 5s forwards, moveAndReverse3 1s linear 7s infinite alternate;
+}
+@keyframes moveAndReverse3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20px, -20px);
+  }
+}
+#home-page-container #intro-container #svg-human #arcPath4 {
+  stroke-dasharray: 1100;
+  stroke-dashoffset: 1100;
+  stroke: #FFCBAD;
+  stroke-width: 1;
+  fill: transparent;
+  animation: draw-path 1s ease 0s forwards, fade-in-skin-1 3s ease 1s forwards;
+}
+#home-page-container #intro-container #svg-human .svg-face {
+  fill: transparent;
+  animation: fade-in-black-1 1s ease 7s forwards;
+}
+#home-page-container #intro-container svg text {
+  fill: transparent;
+}
+#home-page-container #intro-container svg text#text-creating {
+  animation: fade-in-black-1 1s ease 2s forwards, fade-out-text 1s ease 6s forwards;
+}
+#home-page-container #intro-container svg text#text-start {
+  animation: fade-in-black-1 1s ease 3s forwards, fade-out-text 1s ease 6s forwards;
+}
+#home-page-container #intro-container svg text#text-to {
+  animation: fade-in-black-1 1s ease 4s forwards, fade-out-text 1s ease 6s forwards;
+}
+#home-page-container #intro-container svg text#text-finish {
+  animation: fade-in-black-1 1s ease 5s forwards, fade-out-text 1s ease 6s forwards;
+}
+
+/*# sourceMappingURL=Home.css.map */

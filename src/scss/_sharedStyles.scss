@@ -1,0 +1,51 @@
+$nav-height: 80px;
+$white-1: white;
+$white-2: rgb(254, 254, 254);
+$black-1: #010101;
+$green-1: #E9F381;
+$yellow-1: #fffcba;
+$yellow-2: #d6cb00;
+$blue-1: #befaff;
+$blue-2: #00abbb;
+$grey-1: #777777;
+$pink-1: #fdc1f8;
+$pink-2: #ff29ed;
+$skin-1: #FFCBAD;
+
+h2 {
+  text-align: center;
+  font-size: 5rem;
+  margin: 1rem;
+}
+
+@keyframes draw-path {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-text {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@mixin fade-in-color-mixin($name, $color) {
+  @keyframes #{$name} {
+    from {
+      fill: transparent;
+    }
+    to {
+      fill: $color;
+    }
+  }
+}
+
+@include fade-in-color-mixin("fade-in-yellow-1", $yellow-1);
+@include fade-in-color-mixin("fade-in-black-1", $black-1);
+@include fade-in-color-mixin("fade-in-blue-1", $blue-1);
+@include fade-in-color-mixin("fade-in-yellow-1", $yellow-1);
+@include fade-in-color-mixin("fade-in-grey-1", $grey-1);
+@include fade-in-color-mixin("fade-in-skin-1", $skin-1);
+@include fade-in-color-mixin("fade-in-green-1", $green-1);
+@include fade-in-color-mixin("fade-in-pink-1", $pink-1);

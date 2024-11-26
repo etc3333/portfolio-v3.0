@@ -1,0 +1,80 @@
+@use '_sharedStyles.scss' as shared;
+
+:root {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+#root {
+  box-sizing: border-box;
+  height: 100vh;
+  position: relative;
+}
+
+body {
+  $sb-track-color: shared.$white-1;
+  $sb-thumb-color: grey;
+  $sb-size: 5px;
+
+  margin: 0;
+  background-color: white;
+/*   background-image: radial-gradient(#444cf7 1px, #e5e5f7 1px);
+  background-size: 20px 20px; */
+
+  
+  &::-webkit-scrollbar {
+    width: $sb-size;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $sb-track-color;
+    border-radius: 27px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $sb-thumb-color;
+    border-radius: 27px;
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    scrollbar-color: $sb-thumb-color $sb-track-color;
+  }
+}
+
+#home-container {
+  display: flex;
+  margin-top: shared.$nav-height;
+
+  .flexbox-1 {
+    flex: 3;
+  }
+
+  .flexbox-2 {
+    flex: 2;
+  }
+}
+
+.hr-container {
+  display: flex;
+  justify-content: center;
+
+  hr {
+    border: solid grey 1px;
+    margin: 0;
+    width: 0%;
+    transition: width 2s ease;
+  }
+}

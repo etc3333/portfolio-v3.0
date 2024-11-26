@@ -1,0 +1,199 @@
+@use 'sharedStyles.scss' as shared;
+
+#home-page-container {
+  $begin_text_delay: 0s;
+  $fill_text_delay: 1s;
+  $fade_in_text_delay: 2s;
+  $first_pie_fade_in_delay: 3s;
+  $second_pie_fade_in_delay: 4s;
+  $third_pie_fade_in_delay: 5s;
+  $remove_pie_text_delay: 6s;
+  $start_pie_move_delay: 7s;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  
+
+  #intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    > div {
+      width: 100%;
+    }
+
+    @mixin moveAndReverse-mixin($name, $x, $y) {
+      @keyframes #{$name} {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(#{$x}, #{$y});
+        }
+      }
+    }
+
+    @keyframes rotate-infinite {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes fade-out-text {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    #svg-border-decoration {
+      path {
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        stroke: shared.$black-1;
+        stroke-width: 3;
+        fill: transparent;
+        animation: draw-path 3s ease $start_pie_move_delay forwards;
+      }
+    }
+
+    #svg-intro {
+      .intro-text {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        stroke: shared.$black-1;
+        stroke-width: 1;
+        fill: transparent;
+        animation: draw-text 1s ease $begin_text_delay forwards,
+          fade-in-black-1 1s ease $fill_text_delay forwards;
+      }
+
+      .nav-text {
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      #nav-pentagon {
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 1100;
+        stroke: shared.$blue-1;
+        stroke-width: 1;
+        fill: transparent;
+        animation: draw-path 1s ease $begin_text_delay forwards,
+          fade-in-blue-1 3s ease $fill_text_delay forwards;
+
+        &.rotateInfinite {
+          animation: draw-path 1s ease $begin_text_delay forwards,
+            fade-in-blue-1 3s ease $fill_text_delay forwards,
+            rotate-infinite 3s linear infinite forwards;
+          transform-origin: center;
+        }
+      }
+      #nav-triangle {
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 1100;
+        stroke: shared.$pink-1;
+        stroke-width: 1;
+        fill: transparent;
+        animation: draw-path 1s ease $begin_text_delay forwards,
+          fade-in-pink-1 3s ease $fill_text_delay forwards;
+
+        &.rotateInfinite {
+          animation: draw-path 1s ease $begin_text_delay forwards,
+            fade-in-pink-1 3s ease $fill_text_delay forwards,
+            rotate-infinite 3s linear infinite forwards;
+          transform-origin: center;
+        }
+      }
+      #nav-square {
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 1100;
+        stroke: shared.$green-1;
+        stroke-width: 1;
+        fill: transparent;
+        animation: draw-path 1s ease $begin_text_delay forwards,
+          fade-in-green-1 3s ease $fill_text_delay forwards;
+
+        &.rotateInfinite {
+          animation: draw-path 1s ease $begin_text_delay forwards,
+            fade-in-green-1 3s ease $fill_text_delay forwards,
+            rotate-infinite 3s linear infinite forwards;
+          transform-origin: center;
+        }
+      }
+    }
+
+    #svg-human {
+      #arcPath1, #arcPath2, #arcPath3 {
+        fill: transparent;
+      }
+
+      #arcPath1 {
+        @include moveAndReverse-mixin(moveAndReverse1, -20px, -20px);
+        animation: fade-in-blue-1 1s ease $first_pie_fade_in_delay forwards,
+          moveAndReverse1 1s linear #{$start_pie_move_delay} infinite alternate;
+      }
+      #arcPath2 {
+        @include moveAndReverse-mixin(moveAndReverse2, 0, -20px);
+        animation: fade-in-pink-1 1s ease $second_pie_fade_in_delay forwards,
+          moveAndReverse2 1s linear $start_pie_move_delay infinite alternate;
+      }
+      #arcPath3 {
+        @include moveAndReverse-mixin(moveAndReverse3, 20px, -20px);
+        animation: fade-in-green-1 1s ease $third_pie_fade_in_delay forwards,
+          moveAndReverse3 1s linear $start_pie_move_delay infinite alternate;
+      }
+      #arcPath4 {
+        stroke-dasharray: 1100;
+        stroke-dashoffset: 1100;
+        stroke: shared.$skin-1;
+        stroke-width: 1;
+        fill: transparent;
+        animation: draw-path 1s ease $begin_text_delay forwards,
+          fade-in-skin-1 3s ease $fill_text_delay forwards;
+      }
+
+      .svg-face {
+        fill: transparent;
+        animation: fade-in-black-1 1s ease $start_pie_move_delay forwards,
+      }
+    }
+
+    svg {
+      text {
+        fill: transparent;
+
+        &#text-creating {
+          animation: fade-in-black-1 1s ease $fade_in_text_delay forwards,
+            fade-out-text 1s ease $remove_pie_text_delay forwards;
+        }
+        &#text-start {
+          animation: fade-in-black-1 1s ease $first_pie_fade_in_delay forwards,
+            fade-out-text 1s ease $remove_pie_text_delay forwards;
+        }
+        &#text-to {
+          animation: fade-in-black-1 1s ease $second_pie_fade_in_delay forwards,
+            fade-out-text 1s ease $remove_pie_text_delay forwards;
+        }
+        &#text-finish {
+          animation: fade-in-black-1 1s ease $third_pie_fade_in_delay forwards,
+            fade-out-text 1s ease $remove_pie_text_delay forwards;
+        }
+      }
+    }
+  }
+}

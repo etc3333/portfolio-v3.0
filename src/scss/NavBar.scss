@@ -1,0 +1,79 @@
+@use '_sharedStyles.scss' as shared;
+
+nav {
+  position: fixed;
+  height: shared.$nav-height;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 50;
+  color: shared.$black-1;
+
+  .nav-tabs {
+    height: shared.$nav-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    position: relative;
+    user-select: none;
+
+    > span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      border-radius: .5rem;
+      background-color: shared.$grey-1;
+    }
+
+    .tab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  .nav-chipsocket {
+    margin: 0 1rem;
+  }
+
+  #moving-chip {
+    z-index: 20;
+    position: absolute;
+    transition: top .75s,
+                left .75s;
+  }
+
+  .blink {
+    animation: blink-animation 1.5s infinite alternate;
+  }
+
+  .delay1 {
+    animation-delay: 0;
+  }
+  
+  .delay2 {
+    animation-delay: .75s;
+  }
+  
+  @keyframes blink-animation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  text {
+    stroke: shared.$blue-1;
+    stroke-width: 1;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw-text 2s linear forwards 2s,
+                fade-in-black-1 3s 3.5s ease forwards;
+  }
+}
