@@ -102,7 +102,7 @@ h2 {
   z-index: 50;
 }
 #about-page-container .title-container > .banner-span {
-  background: linear-gradient(to bottom, #fdc1f8, white);
+  /* background: linear-gradient(to bottom, shared.$pink-1,white); */
   background-color: #fdc1f8;
   position: absolute;
   height: 500px;
