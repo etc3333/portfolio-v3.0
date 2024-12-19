@@ -104,7 +104,7 @@ const About = () => {
                   <div className='about-profile-intro observer-start-element'>
                     <h3>Ethan Chen</h3>
                     <h5>Full Stack Software Engineer</h5>
-                    ethan.chen333@gmail.com | (818) 251-6099
+                    ethan.chen10001@gmail.com | (818) 251-6099
                   </div>
                 </div>
                 <div>
