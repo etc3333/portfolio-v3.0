@@ -59,7 +59,7 @@ const Contact = () => {
           </h3>
           <div id='contact-table'>
             <div>Email</div>
-            <div>ethan.chen333@gmail.com</div>
+            <div>ethan.chen10001@gmail.com</div>
             <div>Number</div>
             <div>(818) 251-6099</div>
             <div>Linkedin</div>
@@ -90,7 +90,7 @@ const Contact = () => {
               </div>
               <div id='contact-form-note-container'>
                 <div>If you don&apos;t want to use contact form or it does not work properly you can reach out at</div>
-                <div style={{marginTop: '5px', fontSize: '1.2rem', textDecoration: 'underline'}}>ethan.chen333@gmail.com</div>
+                <div style={{marginTop: '5px', fontSize: '1.2rem', textDecoration: 'underline'}}>ethan.chen10001@gmail.com</div>
               </div>
             </div>
             <div>
