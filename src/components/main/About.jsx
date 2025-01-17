@@ -118,32 +118,31 @@ const About = () => {
                   </div>
                   <div className='about-profile-jobExperience observer-start-element'>
                     <h4>Job Experience</h4>
-                    <ul>
-                      <li style={{marginBottom: '1rem'}}>
+                    <div style={{marginTop: '10px'}}>
+                      <div className='about-profile-jobTitle'>Full Stack Software Engineering | NeuroLeap Corp</div>
+                      <div>April 2024 - Present</div>
+                      <ul>
+                        <li>Led the development of a <b><u>Cloud Service</u></b> enabling medical specialists to design and host custom applications for screening and intervention of individuals with neurological and educational care needs.</li>
+                        <li>Engineered a <b><u>data analytics</u></b> driven interactive report generation feature, utilizing <a href='https://d3js.org/'>D3.js</a> for dynamic <b><u>data visualizations</u></b> and integrating statistical analysis tools to help users visualize test results, identify trends, and derive actionable insights.</li>
+                        <li>Delivered cloud service deployment via <b><u><a href='https://www.docker.com/'>Docker</a></u></b> Compose files to orchestrate multi-container environments, facilitating seamless integration of backend services, database, and frontend applications.</li>
+                        <li>Implemented <b><u>CI/CD</u></b> pipelines to automate and streamline <b><u>database migrations</u></b>, ensuring seamless deployment and schema updates.</li>
+                        <li>Configured <b><u><a href='https://nginx.org/en/'>Nginx</a></u></b> as a reverse proxy to distribute incoming client requests to multiple backend services, enhancing scalability, debugging ease, and security.</li>
+                        <li>Devised RESTful <b><u>APIs</u></b> to handle CRUD operations, ensuring robust and scalable interactions with the database.</li>
+                        <li>Streamlined email <b><u>automation</u></b> to improve customer experience and interactivity.</li>
+                        <li>Oversaw implementation of JWT role-based <b><u>authentication</u></b> for the middleware.</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <div style={{marginBottom: '1rem'}}>
                         <div className='about-profile-jobTitle'>Frontend Software Engineering Intern | NeuroLeap Corp</div>
                         <div>Jan 2023 - April 2024</div>
                         <ul>
-                          <li>Tech Stack: Vue.js, Golang, PostgreSQL</li>
                           <li>Implemented UI/UX wireframes to main company website.</li>
                           <li>Collaborated with developer to integrate translation feature to the site for convenience to out of country users.</li>
                           <li>Revamped website by optimizing color schemes, typography and spacing to reduce visual strain and increase session duration of new and current users.</li>
                         </ul>
-                      </li>
-                      <li>
-                        <div className='about-profile-jobTitle'>Full Stack Software Engineering | NeuroLeap Corp</div>
-                        <div>April 2024 - Present</div>
-                        <ul>
-                          <li>Tech Stack: Vue.js, Golang, PostgreSQL, Docker, Nginx</li>
-                          <li>Spearheaded the development of a scalable web service enabling medical specialists to create custom applications for testing special needs individuals.</li>
-                          <li>Engineered an advanced report generation features via <a href='https://d3js.org/'>D3.js</a> to compare test results, incorporating statistical analysis and data visualization tools/libraries for comprehensive insights.</li>
-                          <li>Delivered web service deployment via <a href='https://www.docker.com/'>Docker</a> Compose files to orchestrate multi-container environments, facilitating seamless integration of backend services, database, and frontend applications.</li>
-                          <li>Configured <a href='https://nginx.org/en/'>Nginx</a> as a reverse proxy to distribute incoming client requests to multiple backend services, enhancing scalability and debugging ease.</li>
-                          <li>Devised RESTful APIs to handle Create, Read, Update, and Delete (CRUD) operations, ensuring robust and scalable interactions with the database.</li>
-                          <li>Streamlined email automation to improve customer experience and interactivity.</li>
-                          <li>Oversaw/Directed implementation of JWT role-based authentication for the middleware.</li>
-                        </ul>
-                      </li>
-                    </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div>
